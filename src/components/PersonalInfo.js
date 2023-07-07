@@ -4,7 +4,7 @@ class Personal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      people: [
+      peopleArray: [
         {
           name: "Oscar Morado",
           number: "704-281-9158",
@@ -25,11 +25,11 @@ class Personal extends Component {
   }
 
   render() {
-    const { people } = this.state;
+    const { peopleArray } = this.state;
 
     return (
       <div>
-        {people.map((person, index) => (
+        {peopleArray.map((person, index) => (
           <div key={index}>
             <h1>{person.name}</h1>
             <p>{person.number}</p>
