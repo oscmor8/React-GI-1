@@ -29,8 +29,8 @@ class Personal extends Component {
 
     return (
       <div>
-        {peopleArray.map((person, index) => (
-          <div key={index}>
+        {peopleArray.map((person) => (
+          <div>
             <h1>{person.name}</h1>
             <p>{person.number}</p>
             <p>{person.dateOfBirth}</p>
