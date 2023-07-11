@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 class Personal extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class Personal extends Component {
     const { peopleArray } = this.state;
 
     return (
-      <div>
+      <React.Fragment>
         {peopleArray.map((person) => (
           <div>
             <h1>{person.name}</h1>
@@ -36,7 +36,7 @@ class Personal extends Component {
             <p>{person.dateOfBirth}</p>
           </div>
         ))}
-      </div>
+      </React.Fragment>
     );
   }
 }
